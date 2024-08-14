@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #8b00ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+        h1 {
+            color: #fff;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin: 0;
+        }
+        p {
+            font-size: 1.5em;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            margin: 10px 0;
+        }
+        a {
+            font-size: 1.5em;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.3);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .flags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .flag {
+            width: 100px;
+            height: 60px;
+            margin: 5px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Gay_Pride_Flag.svg/1024px-Gay_Pride_Flag.svg.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Colorful Page</h1>
+        <p>This page is filled with colorful elements and pride flags!</p>
+        <a href="https://t.me/flymeis">@flymeis</a>
+        <div class="flags">
+            <div class="flag"></div>
+            <div class="flag"></div>
+            <div class="flag"></div>
+            <div class="flag"></div>
+            <div class="flag"></div>
+            <div class="flag"></div>
+            <div class="flag"></div>
+            <div class="flag"></div>
+            <div class="flag"></div>
+            <div class="flag"></div>
+        </div>
+    </div>
+</body>
+</html>
